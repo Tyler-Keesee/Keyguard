@@ -76,46 +76,31 @@ KeyGuard/
 
 ---
 
-## 🚀 Quick Start
+## Quick Start (project concept only)
 
-### Requirements
+This repository currently contains a README, roadmap and an API-key requirements note, **not a working backend or frontend**. The previously listed Node.js, database migration and Docker commands pointed to nonexistent directories and are intentionally not offered as runnable instructions.
 
-- Node.js (18+)
-- PostgreSQL database
-- Docker & Docker Compose
+To inspect the project description on Windows:
 
-### Installation & Running Locally
-
-Clone the repository:
-
-```bash
-git clone https://github.com/yourusername/KeyGuard.git
-cd KeyGuard
+```powershell
+git clone https://github.com/Tyler-Keesee/Keyguard.git
 ```
 
-**Backend Setup:**
-
-```bash
-cd backend
-npm install
-cp .env.example .env
-npm run migrate          # run database migrations
-npm start                # start backend server
+```powershell
+Set-Location .\\Keyguard
 ```
 
-**Frontend Setup:**
-
-```bash
-cd ../frontend
-npm install
-npm run dev              # launch frontend
+```powershell
+Get-ChildItem -Force
 ```
+
+No `npm ci`, `venv`, migration, server launch or deployment command is valid until the application is implemented and tested. Everything below is a **proposed architecture and roadmap**, not a verified security/compliance certification.
 
 ---
 
 ## 🔒 Security & Compliance
 
-KeyGuard is built with a security-first approach, adhering explicitly to enterprise compliance requirements:
+The intended future implementation is to use a security-first approach; none of the following features or certifications is verified in this documentation-only repository:
 
 - **Encryption:** AES-256 encryption for data at rest and TLS 1.3+ for data in transit.
 - **Auditing & Logging:** Immutable logs for SOC 2, GDPR, ISO 27001.
@@ -149,7 +134,7 @@ Both offer generous free tiers and easy scalability ideal for enterprise deploym
 
 ## 📖 Documentation & Support
 
-Detailed integration and user documentation is available in:
+Documentation links listed below are planned, not necessarily present in this repository:
 
 - [`docs/USAGE.md`](#)
 - [`docs/API.md`](#)
